@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const useInputState = (defaultValue= null) => {
+export const useInputState = (defaultValue= null) => {
     const [value, setValue] = useState(defaultValue);
 
     const handleChange = e => {
@@ -10,7 +10,7 @@ const useInputState = (defaultValue= null) => {
     return [value, handleChange];
 }
 
-const useEmailInputState = (defaultValue = null) => {
+export const useEmailInputState = (defaultValue = null) => {
     const [email, setEmail] = useState(defaultValue);
 
     const onChange = e => {
@@ -22,4 +22,3 @@ const useEmailInputState = (defaultValue = null) => {
     }
 }
 
-export {useInputState, useEmailInputState};
