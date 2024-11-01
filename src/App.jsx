@@ -1,4 +1,5 @@
 import "./App.css";
+import Grandpa from "./components/Grandpa/Grandpa";
 // import HookForm from './components/HookForm/HookForm'
 // import ObjectHookFrom from './components/ObjectHookFrom.jsx/ObjectHookFrom'
 // import RefForm from './components/RefForm/RefForm'
@@ -16,17 +17,19 @@ function App() {
   }
   return (
     <>
+    <h1>Form Master</h1>
+    <Grandpa></Grandpa>
       {/* <SimpleForm></SimpleForm> */}
       {/* <StatefulForm></StatefulForm> */}
       {/* <RefForm></RefForm> */}
       {/* <HookForm></HookForm> */}
       {/* <ObjectHookFrom></ObjectHookFrom> */}
-      <ReuseableForm
+      {/* <ReuseableForm
         formTitle={"Sign Up"}
         submitBtnText={"Submit"}
         handleSubmit={handleSingUpSubmit}
       >
-        {/* Give props as children */}
+        
         <div>
           <h1>Sing Up</h1>
           <p>Please, sign up your account</p>
@@ -38,13 +41,13 @@ function App() {
         submitBtnText="Update"
         handleSubmit={handleUpdateProfile}
       >
-        {/* Give props as children */}
+        
         <div>
           <h1>Update Profile</h1>
           <p>Please, update your profile.</p>
         </div>
 
-      </ReuseableForm>
+      </ReuseableForm> */}
     </>
   );
 }
